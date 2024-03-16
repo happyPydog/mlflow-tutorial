@@ -1,0 +1,27 @@
+[metadata]
+name = "<project_name>"
+author = "happyPydog"
+url = "https://github.com/happyPydog/<project_name>"
+
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+]
+
+[tool.black]
+line-length = 120
+
+[tool.flake8]
+max-line-length = 120
+exclude = [
+    "tests",
+    ".venv",
+]
+
+[tool.istor]
+lines-after-import = 2
+
+[tool.mypy]
+ignore_missing_imports = true
+show_error_codes = true
