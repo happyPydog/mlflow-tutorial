@@ -1,13 +1,30 @@
-[metadata]
-name = "<project_name>"
-author = "happyPydog"
-url = "https://github.com/happyPydog/<project_name>"
+[tool.poetry]
+name = "mlflow-tutorial"
+version = "0.1.0"
+description = ""
+authors = ["Rammstein-1994 <lanc840930.mg09@nycu.edu.tw>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mlflow = "^2.11.1"
+scikit-learn = "^1.4.1.post1"
+optuna = "^3.5.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+pytest-cov = "^4.1.0"
+black = "^24.3.0"
+flake8 = "^7.0.0"
+isort = "^5.13.2"
+mypy = "^1.9.0"
+python-dotenv = "^1.0.1"
 
 [build-system]
-requires = [
-    "setuptools",
-    "wheel",
-]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
 
 [tool.black]
 line-length = 120
